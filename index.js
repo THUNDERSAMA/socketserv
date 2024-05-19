@@ -1,5 +1,7 @@
 //const { createServer } = require("http");
-const  io  = require("socket.io")(3001,{cors:{origin:"http://localhost:3000",methods:["GET","POST"]},})
+const port = process.env.PORT || 3000;
+
+const  io  = require("socket.io")(port,{cors:{origin:"http://localhost:3000",methods:["GET","POST"]},})
 
 
 
